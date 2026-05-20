@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SBNN.info — Galerie</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-top">
+      <div class="header-date" id="currentDate"></div>
+      <a href="index.html" class="site-logo">SBNN<span>.info</span></a>
+      <div class="header-tagline">Actualité & Culture</div>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html"    class="nav-link"><span class="nav-icon">◈</span> Magazine</a>
+      <a href="articles.html" class="nav-link"><span class="nav-icon">◉</span> Articles</a>
+      <a href="galerie.html"  class="nav-link active"><span class="nav-icon">◫</span> Galerie</a>
+    </nav>
+    <div class="nav-rule"></div>
+  </header>
+
+  <!-- CONTENU -->
+  <main>
+
+    <div class="page-header">
+      <h1 class="page-title">Galerie</h1>
+      <p class="page-sub">Cliquez sur une image pour l'agrandir</p>
+    </div>
+
+    <div class="gallery-grid">
+
+      <!-- ══ IMAGES ══
+           Remplacez :
+           - 'assets/gallery-0X.jpg' → chemin vers votre image
+           - Le texte de la <figcaption> → votre légende
+           Classes disponibles :
+           - gallery-item        → taille normale (1×1)
+           - gallery-item tall   → hauteur double  (1×2)
+           - gallery-item wide   → largeur double  (2×1)
+      -->
+
+      <figure class="gallery-item tall" onclick="openLightbox(this)">
+        <img src="assets/gallery-01.jpg" alt="Photo 1" onerror="this.parentElement.classList.add('no-img')">
+        <div class="gallery-placeholder"><span>01</span></div>
+        <figcaption>Légende de la photo 1</figcaption>
+      </figure>
+
+      <figure class="gallery-item" onclick="openLightbox(this)">
+        <img src="assets/gallery-02.jpg" alt="Photo 2" onerror="this.parentElement.classList.add('no-img')">
+        <div class="gallery-placeholder"><span>02</span></div>
+        <figcaption>Légende de la photo 2</figcaption>
+      </figure>
+
+      <figure class="gallery-item" onclick="openLightbox(this)">
+        <img src="assets/gallery-03.jpg" alt="Photo 3" onerror="this.parentElement.classList.add('no-img')">
+        <div class="gallery-placeholder"><span>03</span></div>
+        <figcaption>Légende de la photo 3</figcaption>
+      </figure>
+
+      <figure class="gallery-item wide" onclick="openLightbox(this)">
+        <img src="assets/gallery-04.jpg" alt="Photo 4" onerror="this.parentElement.classList.add('no-img')">
+        <div class="gallery-placeholder"><span>04</span></div>
+        <figcaption>Légende de la photo 4</figcaption>
+      </figure>
+
+      <figure class="gallery-item" onclick="openLightbox(this)">
+        <img src="assets/gallery-05.jpg" alt="Photo 5" onerror="this.parentElement.classList.add('no-img')">
+        <div class="gallery-placeholder"><span>05</span></div>
+        <figcaption>Légende de la photo 5</figcaption>
+      </figure>
+
+      <figure class="gallery-item" onclick="openLightbox(this)">
+        <img src="assets/gallery-06.jpg" alt="Photo 6" onerror="this.parentElement.classList.add('no-img')">
+        <div class="gallery-placeholder"><span>06</span></div>
+        <figcaption>Légende de la photo 6</figcaption>
+      </figure>
+
+      <figure class="gallery-item wide" onclick="openLightbox(this)">
+        <img src="assets/gallery-07.jpg" alt="Photo 7" onerror="this.parentElement.classList.add('no-img')">
+        <div class="gallery-placeholder"><span>07</span></div>
+        <figcaption>Légende de la photo 7</figcaption>
+      </figure>
+
+      <figure class="gallery-item tall" onclick="openLightbox(this)">
+        <img src="assets/gallery-08.jpg" alt="Photo 8" onerror="this.parentElement.classList.add('no-img')">
+        <div class="gallery-placeholder"><span>08</span></div>
+        <figcaption>Légende de la photo 8</figcaption>
+      </figure>
+
+      <figure class="gallery-item" onclick="openLightbox(this)">
+        <img src="assets/gallery-09.jpg" alt="Photo 9" onerror="this.parentElement.classList.add('no-img')">
+        <div class="gallery-placeholder"><span>09</span></div>
+        <figcaption>Légende de la photo 9</figcaption>
+      </figure>
+
+      <figure class="gallery-item" onclick="openLightbox(this)">
+        <img src="assets/gallery-10.jpg" alt="Photo 10" onerror="this.parentElement.classList.add('no-img')">
+        <div class="gallery-placeholder"><span>10</span></div>
+        <figcaption>Légende de la photo 10</figcaption>
+      </figure>
+
+      <!-- Pour ajouter une image : copier-coller un bloc figure.gallery-item ci-dessus -->
+
+    </div>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+      <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+      <img class="lightbox-img" id="lightboxImg" src="" alt="">
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-logo">SBNN<em>.info</em></span>
+      <span class="footer-copy">© 2025 — Tous droits réservés</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

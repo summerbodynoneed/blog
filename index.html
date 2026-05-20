@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SBNN.info — Magazine</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-top">
+      <div class="header-date" id="currentDate"></div>
+      <a href="index.html" class="site-logo">SBNN<span>.info</span></a>
+      <div class="header-tagline">Actualité & Culture</div>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html"    class="nav-link active"><span class="nav-icon">◈</span> Magazine</a>
+      <a href="articles.html" class="nav-link"><span class="nav-icon">◉</span> Articles</a>
+      <a href="galerie.html"  class="nav-link"><span class="nav-icon">◫</span> Galerie</a>
+    </nav>
+    <div class="nav-rule"></div>
+  </header>
+
+  <!-- CONTENU -->
+  <main>
+
+    <div class="page-header">
+      <h1 class="page-title">Magazine</h1>
+      <p class="page-sub">Cliquez sur une couverture pour accéder au magazine complet</p>
+    </div>
+
+    <div class="magazine-grid">
+
+      <!-- ══ MAGAZINE 01 ══
+           Remplacez :
+           - 'https://drive.google.com/votre-lien-1' → votre lien Google Drive
+           - 'assets/mag-01.jpg' → chemin vers votre image de couverture
+           - Le numéro, titre et date
+      -->
+      <article class="mag-card" onclick="openDrive('https://drive.google.com/file/d/17zkFZdg3P-mdmUZ0OiaPhDgV4RlQXvi9/preview')">
+        <div class="mag-cover">
+          <img src="cover/MAG8.png" alt="Magazine N°5" onerror="this.parentElement.classList.add('no-img')">
+          <div class="mag-cover-placeholder"><span class="mag-num">N°08</span></div>
+          <div class="mag-overlay"><span class="mag-open-label">Ouvrir ↗</span></div>
+        </div>
+        <div class="mag-info">
+          <span class="mag-issue">Numéro 08</span>
+          <h2 class="mag-title">Sur la route</h2>
+          <span class="mag-date">Mars 2026</span>
+        </div>
+      </article>
+      
+      <article class="mag-card" onclick="openDrive('https://drive.google.com/file/d/1XlqsQpwA3_0MIH78sN9NZx_eBIv4yWf1/preview')">
+        <div class="mag-cover">
+          <img src="cover/MAG7.png" alt="Magazine N°5" onerror="this.parentElement.classList.add('no-img')">
+          <div class="mag-cover-placeholder"><span class="mag-num">N°07</span></div>
+          <div class="mag-overlay"><span class="mag-open-label">Ouvrir ↗</span></div>
+        </div>
+        <div class="mag-info">
+          <span class="mag-issue">Numéro 07</span>
+          <h2 class="mag-title">Encore plus fort</h2>
+          <span class="mag-date">Septembre 2024</span>
+        </div>
+      </article>
+      
+      <article class="mag-card" onclick="openDrive('https://drive.google.com/file/d/1Rmws0H4nftZ8BY0dHN55V2l6eg5c09Nk/preview')">
+        <div class="mag-cover">
+          <img src="cover/MAG6.png" alt="Magazine N°6" onerror="this.parentElement.classList.add('no-img')">
+          <div class="mag-cover-placeholder"><span class="mag-num">N°06</span></div>
+          <div class="mag-overlay"><span class="mag-open-label">Ouvrir ↗</span></div>
+        </div>
+        <div class="mag-info">
+          <span class="mag-issue">Numéro 06</span>
+          <h2 class="mag-title">Folie en forêt</h2>
+          <span class="mag-date">Juin 2024</span>
+        </div>
+      </article>
+      
+      <article class="mag-card" onclick="openDrive('https://drive.google.com/file/d/1iII9uHwTtEt4xGbmC9tBJO7F6pLiDKQG/preview')">
+        <div class="mag-cover">
+          <img src="cover/MAG5.png" alt="Magazine N°5" onerror="this.parentElement.classList.add('no-img')">
+          <div class="mag-cover-placeholder"><span class="mag-num">N°05</span></div>
+          <div class="mag-overlay"><span class="mag-open-label">Ouvrir ↗</span></div>
+        </div>
+        <div class="mag-info">
+          <span class="mag-issue">Numéro 05</span>
+          <h2 class="mag-title">Chacun ses atoûts</h2>
+          <span class="mag-date">Mars 2024</span>
+        </div>
+      </article>
+      
+      <article class="mag-card" onclick="openDrive('https://docs.google.com/file/d/12mj6P7Kd9mQ-yifyKwlAf6cgC0OWsV36/preview')">
+        <div class="mag-cover">
+          <img src="cover/MAG4.png" alt="Magazine N°4" onerror="this.parentElement.classList.add('no-img')">
+          <div class="mag-cover-placeholder"><span class="mag-num">N°04</span></div>
+          <div class="mag-overlay"><span class="mag-open-label">Ouvrir ↗</span></div>
+        </div>
+        <div class="mag-info">
+          <span class="mag-issue">Numéro 04</span>
+          <h2 class="mag-title">Brique par Brique</h2>
+          <span class="mag-date">Décembre 2023</span>
+        </div>
+      </article>
+      
+      <article class="mag-card" onclick="openDrive('https://docs.google.com/file/d/1pRcj6E3LeXsJqBq8sEjnDYzZgWcAsVLg/preview')">
+        <div class="mag-cover">
+          <img src="cover/MAG3.png" alt="Magazine N°3" onerror="this.parentElement.classList.add('no-img')">
+          <div class="mag-cover-placeholder"><span class="mag-num">N°03</span></div>
+          <div class="mag-overlay"><span class="mag-open-label">Ouvrir ↗</span></div>
+        </div>
+        <div class="mag-info">
+          <span class="mag-issue">Numéro 03</span>
+          <h2 class="mag-title">Retour au four</h2>
+          <span class="mag-date">Septembre 2023</span>
+        </div>
+      </article>
+      
+      <article class="mag-card" onclick="openDrive('https://docs.google.com/file/d/11rP-OJd8D6T5nKUopManUabcYMhAXeQH/preview')">
+        <div class="mag-cover">
+          <img src="cover/MAG2.png" alt="Magazine N°2" onerror="this.parentElement.classList.add('no-img')">
+          <div class="mag-cover-placeholder"><span class="mag-num">N°02</span></div>
+          <div class="mag-overlay"><span class="mag-open-label">Ouvrir ↗</span></div>
+        </div>
+        <div class="mag-info">
+          <span class="mag-issue">Numéro 02</span>
+          <h2 class="mag-title">Open SBNN</h2>
+          <span class="mag-date">Juin 2023</span>
+        </div>
+      </article>
+      
+      <article class="mag-card" onclick="openDrive('https://docs.google.com/file/d/1_30iXaLG76ueofUCQbVgX4mQ_Sok8ANs/preview')">
+        <div class="mag-cover">
+          <img src="cover/MAG1.png" alt="Magazine N°1" onerror="this.parentElement.classList.add('no-img')">
+          <div class="mag-cover-placeholder"><span class="mag-num">N°01</span></div>
+          <div class="mag-overlay"><span class="mag-open-label">Ouvrir ↗</span></div>
+        </div>
+        <div class="mag-info">
+          <span class="mag-issue">Numéro 01</span>
+          <h2 class="mag-title">Bonne année</h2>
+          <span class="mag-date">Janvier 2023</span>
+        </div>
+      </article>
+
+      <!-- Pour ajouter un magazine : copier-coller un bloc article.mag-card ci-dessus -->
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-logo">SBNN<em>.INFO</em></span>
+      <span class="footer-copy">© 2020 — Tous droits réservés</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
