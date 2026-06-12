@@ -1,13 +1,13 @@
 /* ============================================================
-   SBNN.INFO — style.css
+   SBNN.NEWS — style.css
    Esthétique : Windows XP / début années 2000 (sbnn.store)
-   Palette    : blanc cassé & orange pastel (sbnn.info)
+   Palette    : blanc cassé & orange pastel (sbnn.news)
    ============================================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&display=swap');
 
 /* ────────────────────────────────────────────
-   TOKENS — palette sbnn.info sur base XP
+   TOKENS — palette sbnn.news sur base XP
    ──────────────────────────────────────────── */
 :root {
   /* Fonds */
@@ -21,7 +21,7 @@
   --border-dark:  #c8b89a;   /* beige sombre (= gris XP remplacé) */
   --border-shadow:#9a8470;   /* brun chaud (= #404040 remplacé) */
 
-  /* Accents orange pastel sbnn.info */
+  /* Accents orange pastel sbnn.news */
   --accent:       #d4733a;   /* orange-dark principal */
   --accent-hover: #b85e28;   /* orange foncé hover */
   --link:         #b85e28;
@@ -29,10 +29,10 @@
   --link-hover:   #e63946;
 
   /* Textes */
-  --text:         #2c2418;   /* ink sbnn.info */
-  --text-muted:   #6b5c4a;   /* ink-mid sbnn.info */
+  --text:         #2c2418;   /* ink sbnn.news */
+  --text-muted:   #6b5c4a;   /* ink-mid sbnn.news */
 
-  /* Header gradient — bleu XP → orange sbnn.info */
+  /* Header gradient — bleu XP → orange sbnn.news */
   --header-start: #8a4a18;   /* brun-orange foncé */
   --header-end:   #f0c898;   /* orange clair doré */
 

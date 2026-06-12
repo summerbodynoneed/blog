@@ -1,5 +1,5 @@
 /* ============================================================
-   SBNN.INFO — script.js (commun aux 3 pages)
+   SBNN.NEWS — script.js (commun aux 3 pages)
    Modules :
      1. Date dans le header
      2. Ouverture Google Drive (Magazine)

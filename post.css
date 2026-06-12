@@ -1,0 +1,193 @@
+/* ============================================================
+   SBNN.NEWS — post.css
+   Styles spécifiques aux pages articles individuelles (posts/)
+   ============================================================ */
+
+/* ────────────────────────────────────────────
+   LAYOUT PAGE ARTICLE
+   ──────────────────────────────────────────── */
+.post-main {
+  max-width: 780px;
+  width: 100%;
+  margin: 10px auto;
+  padding: 0 16px 60px;
+  animation: fadeIn 0.3s ease both;
+}
+
+/* ── Lien retour ── */
+.post-back {
+  margin-bottom: 16px;
+}
+
+.post-back a {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--accent);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 10px;
+  background-color: var(--btn-face);
+  border: 2px solid;
+  border-color: var(--btn-light) var(--btn-shadow) var(--btn-shadow) var(--btn-light);
+  font-family: var(--font-ui);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.post-back a:hover {
+  background-color: var(--bg-light);
+  color: var(--accent-hover);
+  text-decoration: none;
+}
+
+.post-back a:active {
+  border-color: var(--btn-shadow) var(--btn-light) var(--btn-light) var(--btn-shadow);
+}
+
+.post-back-bottom { margin-top: 32px; margin-bottom: 0; }
+
+/* ────────────────────────────────────────────
+   ARTICLE — boîte style fenêtre XP
+   ──────────────────────────────────────────── */
+.post-article {
+  background-color: var(--panel);
+  border: 2px solid;
+  border-color: var(--btn-light) var(--btn-shadow) var(--btn-shadow) var(--btn-light);
+  overflow: hidden;
+}
+
+/* ── En-tête article ── */
+.post-header {
+  background: linear-gradient(to right, var(--header-start), var(--header-end));
+  padding: 12px 16px 14px;
+  border-bottom: 2px solid var(--border-shadow);
+}
+
+.post-meta-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+/* Catégorie & date — réutilise les classes de style.css */
+.post-header .article-date {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: var(--font-mono);
+  font-size: 11px;
+}
+
+.post-title {
+  font-family: var(--font-main);
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 900;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.35);
+  line-height: 1.2;
+}
+
+/* ── Corps de l'article ── */
+.post-content {
+  padding: 20px 24px 28px;
+  font-family: var(--font-main);
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--text);
+}
+
+/* Paragraphes */
+.post-content p {
+  margin-bottom: 14px;
+}
+
+.post-content p:last-child { margin-bottom: 0; }
+
+/* Titres dans l'article */
+.post-content h2,
+.post-content h3 {
+  font-family: var(--font-main);
+  color: var(--header-start);
+  margin: 22px 0 10px;
+  line-height: 1.25;
+}
+
+.post-content h2 {
+  font-size: 1.25rem;
+  border-bottom: 1px solid var(--cream-border);
+  padding-bottom: 4px;
+}
+
+.post-content h3 { font-size: 1.05rem; }
+
+/* Gras dans l'article */
+.post-content b,
+.post-content strong {
+  color: var(--header-start);
+  font-weight: 700;
+}
+
+/* Liens dans l'article */
+.post-content a {
+  color: var(--link);
+  text-decoration: underline;
+}
+.post-content a:hover { color: var(--link-hover); }
+
+/* Images dans l'article */
+.post-content img,
+.post-content .post-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 18px auto;
+  border: 2px solid;
+  border-color: var(--btn-shadow) var(--btn-light) var(--btn-light) var(--btn-shadow);
+  box-shadow: 3px 3px 0 rgba(0,0,0,0.15);
+}
+
+/* Div wrap images Blogger */
+.post-content .post-img-wrap {
+  text-align: center;
+  margin: 18px 0;
+}
+
+/* Listes */
+.post-content ul,
+.post-content ol {
+  padding-left: 22px;
+  margin-bottom: 14px;
+}
+
+.post-content li { margin-bottom: 5px; }
+
+/* Blockquote */
+.post-content blockquote {
+  border-left: 4px solid var(--accent);
+  padding: 8px 14px;
+  margin: 16px 0;
+  background-color: var(--bg-light);
+  border-top: 1px solid var(--cream-border);
+  border-bottom: 1px solid var(--cream-border);
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+/* Séparateur */
+.post-content hr {
+  border: none;
+  border-top: 2px solid;
+  border-color: var(--btn-shadow) transparent transparent transparent;
+  border-bottom: 1px solid var(--btn-light);
+  margin: 20px 0;
+}
+
+/* ────────────────────────────────────────────
+   RESPONSIVE
+   ──────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .post-main    { padding: 0 10px 40px; }
+  .post-content { padding: 14px 14px 20px; font-size: 14px; }
+  .post-title   { font-size: 1.3rem; }
+}
